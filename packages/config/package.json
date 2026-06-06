@@ -1,0 +1,13 @@
+{
+  "name": "@padeal/config",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./tailwind.config.js",
+  "exports": {
+    "./tailwind": "./tailwind.config.js",
+    "./tokens": "./tokens.ts"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

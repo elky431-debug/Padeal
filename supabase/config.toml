@@ -1,0 +1,14 @@
+# A new Supabase project - run `supabase init` locally to link
+project_id = "padeal"
+
+[api]
+enabled = true
+port = 54321
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323

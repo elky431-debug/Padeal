@@ -1,0 +1,30 @@
+{
+  "name": "padeal",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:web": "turbo dev --filter=@padeal/web",
+    "dev:mobile": "turbo dev --filter=@padeal/mobile",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.0",
+    "typescript": "^5.6.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "packageManager": "npm@10.8.2",
+  "engines": {
+    "node": ">=18"
+  },
+  "overrides": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
