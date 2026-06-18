@@ -62,16 +62,17 @@ export default function HomePage() {
             </div>
 
             <HeroTitle
-              lines={['Trouve ton', 'partenaire padel', 'en 2 swipes']}
-              highlightLine={1}
-              highlightWords={['partenaire', 'padel']}
+              lines={['Matche, joue,', 'progresse au', 'padel']}
+              highlightLine={2}
+              highlightWords={['padel']}
               size="hero"
               className="mb-6"
             />
 
             <p className="font-sans text-base text-gray max-w-md mb-8 leading-relaxed">
-              Swipe, matche, joue. Padeal connecte les joueurs de padel par
-              niveau, style et proximité. Comme Tinder, mais pour le court.
+              Trouve des partenaires, organise tes parties, grimpe au
+              classement et discute en direct. Padeal réunit tout le padel dans
+              une seule app.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
