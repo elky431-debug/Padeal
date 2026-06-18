@@ -2,19 +2,24 @@
 
 import Link from 'next/link';
 import { HeroTitle, Card, Badge, Chip, Button } from '@padeal/ui';
+import { DEMO_COUPS, DEMO_STATS, DEMO_USER } from '@padeal/lib';
 import { Settings, Crown } from 'lucide-react';
 
 export default function ProfilPage() {
+  const { prenom, age, niveau, palmares } = DEMO_USER;
+
   return (
     <div className="px-6 py-6">
       <div className="flex justify-between items-start mb-8">
         <div className="flex items-center gap-4">
           <div className="h-20 w-20 rounded-full bg-green-light border-2 border-border flex items-center justify-center">
-            <span className="font-boldonse text-3xl text-green-dark">A</span>
+            <span className="font-boldonse text-3xl text-green-dark">
+              {prenom.charAt(0).toUpperCase()}
+            </span>
           </div>
           <div>
-            <HeroTitle lines={['ALEX, 25']} size="h2" />
-            <Badge variant="level" >Niv. 4</Badge>
+            <HeroTitle lines={[`${prenom.toUpperCase()}, ${age}`]} size="h2" />
+            <Badge variant="level">Niv. {niveau}</Badge>
           </div>
         </div>
         <button className="p-2" aria-label="Paramètres">
@@ -22,12 +27,11 @@ export default function ProfilPage() {
         </button>
       </div>
 
-      {/* Stats */}
       <div className="grid grid-cols-3 gap-3 mb-6">
         {[
-          { label: 'Matchs', value: '12' },
-          { label: 'Victoires', value: '15' },
-          { label: 'ELO', value: '1285' },
+          { label: 'Matchs', value: String(DEMO_STATS.matchs) },
+          { label: 'Victoires', value: String(DEMO_STATS.victoires) },
+          { label: 'ELO', value: String(DEMO_STATS.elo) },
         ].map((stat) => (
           <Card key={stat.label} className="text-center py-4">
             <p className="font-mono text-xl text-green-dark">{stat.value}</p>
@@ -36,12 +40,13 @@ export default function ProfilPage() {
         ))}
       </div>
 
-      {/* Style & coups */}
       <Card className="mb-4">
         <p className="font-sans font-semibold text-black mb-3">Mon style</p>
-        <p className="font-sans text-gray mb-4">Attaquant · Main droite · Drive</p>
+        <p className="font-sans text-gray mb-4">
+          Attaquant · Main droite · Drive
+        </p>
         <div className="flex flex-wrap gap-2">
-          {['Smash', 'Vibora', 'Bandeja', 'Contre-attaque'].map((c) => (
+          {DEMO_COUPS.map((c) => (
             <Chip key={c} selected className="pointer-events-none text-xs">
               {c}
             </Chip>
@@ -49,15 +54,11 @@ export default function ProfilPage() {
         </div>
       </Card>
 
-      {/* Palmarès */}
       <Card className="mb-6">
         <p className="font-sans font-semibold text-black mb-2">Palmarès</p>
-        <p className="font-sans text-sm text-gray">
-          Vainqueur tournoi club Paris 15 · 2025
-        </p>
+        <p className="font-sans text-sm text-gray">{palmares}</p>
       </Card>
 
-      {/* Premium CTA */}
       <Link href="/paywall">
         <Card className="bg-green-light/30 border-green-dark mb-4 cursor-pointer hover:bg-green-light/50 transition-colors">
           <div className="flex items-center gap-3">

@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { View, Text, TextInput, Pressable, ScrollView } from 'react-native';
 import { useRouter, Link } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { DEMO_EMAIL, DEMO_PASSWORD } from '@padeal/lib';
 
 export default function LoginScreen() {
   const router = useRouter();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState(DEMO_EMAIL);
+  const [password, setPassword] = useState(DEMO_PASSWORD);
 
   return (
     <SafeAreaView className="flex-1 bg-white">
@@ -30,10 +31,28 @@ export default function LoginScreen() {
         </Text>
         <Text
           style={{ fontFamily: 'Inter-Regular', fontSize: 15, color: '#555555' }}
-          className="mt-2 mb-8"
+          className="mt-2 mb-6"
         >
           Content de te revoir sur le court.
         </Text>
+
+        <View className="mb-6 rounded-2xl border border-border bg-green-light/40 p-4">
+          <Text
+            style={{ fontFamily: 'Inter-SemiBold', fontSize: 14, color: '#27500A' }}
+            className="mb-2"
+          >
+            Mode démo
+          </Text>
+          <Text
+            style={{ fontFamily: 'Inter-Regular', fontSize: 13, color: '#555555' }}
+            className="mb-3"
+          >
+            Identifiants pré-remplis pour explorer l&apos;app :
+          </Text>
+          <Text style={{ fontFamily: 'Inter-Regular', fontSize: 12, color: '#111111' }}>
+            {DEMO_EMAIL} / {DEMO_PASSWORD}
+          </Text>
+        </View>
 
         <Text
           style={{ fontFamily: 'Inter-Medium', fontSize: 13, color: '#555555' }}
@@ -71,7 +90,7 @@ export default function LoginScreen() {
           className="bg-green-dark rounded-full py-3.5 items-center min-h-[44px] justify-center"
         >
           <Text style={{ fontFamily: 'Inter-SemiBold', fontSize: 16, color: '#FFFFFF' }}>
-            Se connecter
+            Entrer en mode démo
           </Text>
         </Pressable>
 

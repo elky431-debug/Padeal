@@ -62,20 +62,20 @@ export default function HomePage() {
             </div>
 
             <HeroTitle
-              lines={['Matche, joue,', 'progresse au', 'padel']}
-              highlightLine={2}
+              lines={['Tout ton padel', 'dans une', 'seule app']}
+              highlightLine={0}
               highlightWords={['padel']}
               size="hero"
               className="mb-6"
             />
 
             <p className="font-sans text-base text-gray max-w-md mb-8 leading-relaxed">
-              Trouve des partenaires, organise tes parties, grimpe au
-              classement et discute en direct. Padeal réunit tout le padel dans
-              une seule app.
+              Trouve avec qui jouer, réserve tes parties, suis ton classement et
+              échange avec ta communauté. Le padel, du premier swipe au dernier
+              point.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 mb-10">
+            <div className="flex flex-col sm:flex-row gap-3 mb-4">
               <Link href="/register">
                 <Button size="xl">
                   Commencer maintenant
@@ -88,6 +88,13 @@ export default function HomePage() {
                 </Button>
               </Link>
             </div>
+
+            <Link
+              href="/demo"
+              className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-green-dark hover:underline mb-10"
+            >
+              Essayer la démo sans compte →
+            </Link>
 
             {/* social proof */}
             <div className="flex items-center gap-6">
