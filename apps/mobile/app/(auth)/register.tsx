@@ -32,7 +32,7 @@ export default function RegisterScreen() {
           style={{ fontFamily: 'Inter-Regular', fontSize: 15, color: '#555555' }}
           className="mt-2 mb-8"
         >
-          Crée ton profil et trouve ton partenaire padel.
+          Crée ton profil et accède à matchs, parties et ligue.
         </Text>
 
         <Text

@@ -28,8 +28,11 @@ export default function PartenairesScreen() {
   return (
     <SafeAreaView className="flex-1 bg-white">
       <ScrollView contentContainerClassName="px-6 py-6">
-        <Text style={{ fontFamily: 'Boldonse', fontSize: 32, color: '#111111', letterSpacing: -0.8, marginBottom: 24 }}>
+        <Text style={{ fontFamily: 'Boldonse', fontSize: 32, color: '#111111', letterSpacing: -0.8, marginBottom: 8 }}>
           DÉCOUVRE
+        </Text>
+        <Text style={{ fontFamily: 'Inter-Regular', fontSize: 14, color: '#555555', marginBottom: 24 }}>
+          Swipe des profils compatibles pour tes prochains matchs et parties.
         </Text>
 
         <View className="rounded-[20px] border border-border bg-white overflow-hidden mb-6"

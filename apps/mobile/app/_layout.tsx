@@ -37,7 +37,7 @@ export default function RootLayout() {
             marginTop: 8,
           }}
         >
-          Trouve ton partenaire padel
+          Tout ton padel, une seule app
         </Text>
       </View>
     );
