@@ -199,8 +199,8 @@ export default function HomePage() {
             className="mb-4"
           />
           <p className="font-sans text-gray max-w-lg mb-14">
-            Tout ce qu&apos;il te faut pour trouver des partenaires, progresser
-            et ne plus jamais jouer seul.
+            Matchs, parties, ligue et chat — tout ce qu&apos;il faut pour vivre
+            le padel au quotidien.
           </p>
 
           <div className="grid gap-6 md:grid-cols-3">
@@ -269,7 +269,7 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
           >
             <HeroTitle
-              lines={['Des partenaires', 'à ton niveau']}
+              lines={['Des matchs', 'à ton niveau']}
               highlightLine={1}
               highlightWords={['niveau']}
               size="h1"
@@ -295,7 +295,7 @@ export default function HomePage() {
             </ul>
             <Link href="/register">
               <Button>
-                Trouver un partenaire
+                Rejoindre Padeal
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
@@ -322,7 +322,7 @@ export default function HomePage() {
               className="mb-6 mx-auto max-w-2xl"
             />
             <p className="font-sans text-gray max-w-md mx-auto mb-8">
-              Crée ton profil en 2 minutes et trouve ton premier partenaire dès
+              Crée ton profil en 2 minutes et lance ton premier match dès
               aujourd&apos;hui.
             </p>
             <Link href="/register">
@@ -340,7 +340,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="font-boldonse font-extrabold text-2xl text-green-dark">PADEAL</span>
           <p className="font-sans text-sm text-gray">
-            © 2026 Padeal — Le Tinder du padel
+            © 2026 Padeal — Tout ton padel, une seule app
           </p>
         </div>
       </footer>

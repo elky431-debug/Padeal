@@ -52,13 +52,16 @@ export default function PartenairesPage() {
 
   return (
     <div className="px-6 py-6">
-      <HeroTitle lines={['DÉCOUVRE']} size="h1" className="mb-6" />
+      <HeroTitle lines={['DÉCOUVRE']} size="h1" className="mb-2" />
+      <p className="font-sans text-sm text-gray mb-6">
+        Swipe des profils compatibles pour tes prochains matchs et parties.
+      </p>
 
       {current >= profiles.length ? (
         <div className="text-center py-20">
           <HeroTitle lines={['PLUS DE', 'PROFILS']} size="h2" className="mb-4" />
           <p className="font-sans text-gray">
-            Reviens demain pour de nouveaux partenaires !
+            Reviens demain pour de nouveaux profils !
           </p>
         </div>
       ) : (

@@ -34,7 +34,7 @@ export default function PaywallPage() {
       />
 
       <p className="font-sans text-gray mb-8">
-        Débloque toute la puissance de Padeal et trouve ton partenaire idéal
+        Débloque toute la puissance de Padeal : matchs illimités, stats et ligue
         plus vite.
       </p>
 

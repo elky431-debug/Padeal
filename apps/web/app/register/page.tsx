@@ -44,7 +44,7 @@ export default function RegisterPage() {
 
       <HeroTitle lines={['REJOINS LE GAME']} size="h2" className="mb-2" />
       <p className="font-sans text-gray mb-8">
-        Crée ton profil et trouve ton partenaire padel.
+        Crée ton profil et accède à matchs, parties et ligue.
       </p>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-5">

@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Padeal — Trouve ton partenaire padel',
+  title: 'Padeal — Tout ton padel dans une app',
   description:
-    'Le Tinder du padel parisien. Trouve ton partenaire padel en 2 swipes.',
+    'Matche, joue, progresse. Partenaires, parties, ligue et chat — tout le padel au même endroit.',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,

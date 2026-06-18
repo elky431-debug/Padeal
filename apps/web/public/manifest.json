@@ -1,7 +1,7 @@
 {
   "name": "Padeal",
   "short_name": "Padeal",
-  "description": "Trouve ton partenaire padel en 2 swipes",
+  "description": "Matche, joue, progresse. Partenaires, parties, ligue et chat.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
