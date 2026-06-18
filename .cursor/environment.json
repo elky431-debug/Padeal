@@ -1,0 +1,15 @@
+{
+  "install": "npm install",
+  "terminals": [
+    {
+      "name": "Web",
+      "command": "npm run dev:web",
+      "ports": [3001]
+    },
+    {
+      "name": "Mobile",
+      "command": "npm run dev:mobile",
+      "ports": [8081]
+    }
+  ]
+}
