@@ -1,0 +1,14 @@
+{
+  "remote.autoForwardPorts": true,
+  "remote.autoForwardPortsSource": "hybrid",
+  "remote.portsAttributes": {
+    "3001": {
+      "label": "Padeal Web",
+      "onAutoForward": "notify"
+    },
+    "8081": {
+      "label": "Padeal Mobile (Expo)",
+      "onAutoForward": "silent"
+    }
+  }
+}
